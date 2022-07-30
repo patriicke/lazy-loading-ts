@@ -1,4 +1,7 @@
 export interface IUrl {
-  urls: { raw: string };
-  name: string;
+  post: {
+    url: string;
+    message: string;
+    name: string;
+  };
 }
