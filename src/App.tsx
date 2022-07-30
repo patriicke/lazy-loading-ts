@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import { IUrl } from "./interface";
 import data from "./logs/data.json";
 
-const dt = React.lazy((): IUrl[] => import("./logs/data.json"));
-
 const App: React.FC = () => {
   const [url, setUrls] = useState<IUrl[]>([]);
   useEffect(() => {
